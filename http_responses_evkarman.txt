@@ -1,0 +1,51 @@
+Task 1
+
+URL:http://127.0.0.1:5000/todo
+Method:GET
+Execution time:4 ms
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.1.3 Python/3.10.6
+Date: Wed, 29 Jan 2025 18:57:10 GMT
+Content-Type: application/json
+Content-Length: 370
+Connection: close
+
+{
+  "tasks": [
+    {
+      "description": "Milk, Cheese, Pizza, Fruit, Tylenol",
+      "done": false,
+      "title": "Buy groceries",
+      "uri": "http://127.0.0.1:5000/todo/1"
+    },
+    {
+      "description": "Need to find a good Python tutorial on the web",
+      "done": false,
+      "title": "Learn Python",
+      "uri": "http://127.0.0.1:5000/todo/2"
+    }
+  ]
+}
+
+Task 2
+
+URL:http://127.0.0.1:5000/todo
+Method:POST
+Execution time:4 ms
+
+HTTP/1.1 201 CREATED
+Server: Werkzeug/3.1.3 Python/3.10.6
+Date: Wed, 29 Jan 2025 18:59:43 GMT
+Content-Type: application/json
+Content-Length: 152
+Connection: close
+
+{
+  "task": {
+    "description": "example description",
+    "done": false,
+    "title": "example task",
+    "uri": "http://127.0.0.1:5000/todo/3"
+  }
+}
